@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bitclicker</title>
+<link rel="icon" href="icons8-cent-64 (2).png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h1 id="label" class="w3-margin w3-jumbo"></h1>
+<h2 id="level" class="w3-xlarge"></h2>
+<input  onclick="myfunc()" type="image" src="icons8-cent-200.png" id="maincoin"/>
+<p></p>
+<h2 id="you" class="w3-margin w3-jumbo"></h2>
+</header>
+<h4 class="w3-margin">Chose your Coins:</h4>
+<input  onclick="bt1()" type="image" src="icons8-cent-64.png" id="maincoin"/>
+<input  onclick="bt2()" type="image" src="icons8-cent-64 (1).png" id="maincoin"/>
+<input  onclick="bt3()" type="image" src="icons8-cent-64 (2).png" id="maincoin"/>
+<input  onclick="bt4()" type="image" src="icons8-cent-100.png" id="maincoin"/>
+<input  onclick="bt5()" type="image" src="icons8-bitcoin-64.png" id="maincoin"/>
+<h2>Did you enjoy this game?</h2>
+<h4>If you did I really think that you shoud check out the game below</h4>
+<h4>It´s for Windows and it´s an extended version, you can't only change your coin,</h4>
+<h4>you can also update your coin to get more coins per click.</h4>
+<h4>You can download this (v.1) game by clicking the button below.</h4>
+<h4>Have fun!</h4>
+<form method="get" action="Bitcoin_Clicker_V.1.exe">
+    <input type="image" src="icons8-download-96 (1).png" id="maincoin"/>
+ </form>
+ <h4>Credits: </h4>
+ <h6><a href="https://finn-jf.netlify.com/">Finn</a> Made the website front and backend.</h6>
+ <h6><a href="https://www.instagram.com/mqrv.coding/">mqrv.coding</a> Made the extended windows version.</h6>
+ <h6>This was a partner project between Finn and mqrv.coding.</h6>
+ <h6>All the sorce code and the pictures are available at this Github repo</h6>
+ <a href="https://github.com/finnfassnacht/bitclicker">GitHub Repo</a>
+<script>    
+var x = 0;
+function myfunc() {
+    x++
+    document.getElementById("label").innerHTML = (x + " Coins");
+    var level = (x / 25);
+    document.getElementById("level").innerHTML = ("Level: " + level);
+    if (level > 2) {
+        document.getElementById("you").innerHTML = ("Rookie Coiner");
+
+    }
+    if (level > 4) {
+        document.getElementById("you").innerHTML = ("Beginner Coiner");
+
+    }
+    if (level > 6) {
+        document.getElementById("you").innerHTML = ("Amamature Coiner");
+
+    }
+    if (level > 8) {
+        document.getElementById("you").innerHTML = ("Middle Class Coiner");
+
+    }
+    if (level > 10) {
+        document.getElementById("you").innerHTML = ("Master Coiner");
+
+    }
+    if (level > 12) {
+        document.getElementById("you").innerHTML = ("Boss Coiner");
+
+    }
+    if (level > 14) {
+        document.getElementById("you").innerHTML = ("God Coiner");
+
+    }
+    
+}
+function bt1() {
+    document.getElementById("maincoin").src="icons8-cent-64.png";
+}
+function bt2() {
+    document.getElementById("maincoin").src="icons8-cent-64 (1).png";
+}
+function bt3() {
+    document.getElementById("maincoin").src="icons8-cent-64 (2).png";
+}
+function bt4() {
+    document.getElementById("maincoin").src="icons8-cent-100.png";
+}
+function bt5() {
+    document.getElementById("maincoin").src="icons8-bitcoin-64.png";
+}
+</script>
+
+
+</body>
+</html>
